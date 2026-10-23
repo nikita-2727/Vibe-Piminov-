@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dev Instruments — CMD & Git Trainer</title>
+<meta name="description" content="Интерактивный тренажёр по Windows CMD и Git: теория, песочницы, задания с проверкой и анимации.">
+<link rel="stylesheet" href="assets/style.css?v=20261024f">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#/">
+      <span class="brand__mark">&gt;_</span>
+      <span class="brand__text">
+        <strong>Dev Instruments</strong>
+        <small>CMD &amp; Git trainer</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <div class="nav__group">Старт</div>
+      <a class="nav__link" href="#/" data-route="/">
+        <span class="nav__icon">◈</span><span>Обзор</span>
+      </a>
+
+      <div class="nav__group">Windows CMD</div>
+      <a class="nav__link" href="#/cmd" data-route="/cmd">
+        <span class="nav__icon">▤</span><span>Теория</span>
+      </a>
+      <a class="nav__link" href="#/cmd/practice" data-route="/cmd/practice">
+        <span class="nav__icon">✓</span><span>Задания</span><em class="nav__count" id="nav-cmd-count">0</em>
+      </a>
+      <a class="nav__link" href="#/cmd/play" data-route="/cmd/play">
+        <span class="nav__icon">▸</span><span>Песочница</span>
+      </a>
+
+      <div class="nav__group">Git</div>
+      <a class="nav__link" href="#/git" data-route="/git">
+        <span class="nav__icon">▤</span><span>Теория</span>
+      </a>
+      <a class="nav__link" href="#/git/practice" data-route="/git/practice">
+        <span class="nav__icon">✓</span><span>Задания</span><em class="nav__count" id="nav-git-count">0</em>
+      </a>
+      <a class="nav__link" href="#/git/play" data-route="/git/play">
+        <span class="nav__icon">◉</span><span>Визуализатор</span>
+      </a>
+
+      <div class="nav__group">Ещё</div>
+      <a class="nav__link" href="#/cheatsheet" data-route="/cheatsheet">
+        <span class="nav__icon">⚡</span><span>Шпаргалка</span>
+      </a>
+    </nav>
+
+    <div class="sidebar__foot">
+      <div class="xp">
+        <div class="xp__row">
+          <span>Опыт</span>
+          <strong id="xp-value">0 XP</strong>
+        </div>
+        <div class="xp__bar"><i id="xp-bar"></i></div>
+        <div class="xp__hint" id="xp-hint">Реши первое задание →</div>
+      </div>
+    </div>
+  </aside>
+
+  <button class="mobile-bar" id="mobile-bar" type="button" aria-label="Меню" aria-expanded="false">
+    <span class="brand__mark">&gt;_</span>
+    <span id="mobile-title">Dev Instruments</span>
+    <span class="mobile-bar__burger">☰</span>
+  </button>
+
+  <div class="scrim" id="scrim" aria-hidden="true"></div>
+
+  <main class="main" id="app" tabindex="-1"></main>
+</div>
+
+<div id="toast-stack" class="toast-stack" aria-live="polite"></div>
+<div id="confetti" class="confetti" aria-hidden="true"></div>
+
+<script src="assets/js/data-cmd.js?v=20261024f"></script>
+<script src="assets/js/data-git.js?v=20261024f"></script>
+<script src="assets/js/tasks-cmd.js?v=20261024f"></script>
+<script src="assets/js/tasks-git.js?v=20261024f"></script>
+<script src="assets/js/scenarios.js?v=20261024f"></script>
+<script src="assets/js/graph.js?v=20261024f"></script>
+<script src="assets/js/terminal-cmd.js?v=20261024f"></script>
+<script src="assets/js/terminal-git.js?v=20261024f"></script>
+<script src="assets/js/practice.js?v=20261024f"></script>
+<script src="assets/js/play.js?v=20261024f"></script>
+<script src="assets/js/app.js?v=20261024f"></script>
+</body>
+</html>
